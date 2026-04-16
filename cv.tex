@@ -22,6 +22,7 @@
 \address{서울시 동대문구 전농동}{사가정로 190}
 \mobile{+82 10 8465 6774}
 \email{hyunp.dev@gmail.com}
+
 \extrainfo{2000년생, 남성}
 \photo[64pt]{85296811.jpeg}
 
@@ -38,7 +39,7 @@
 
 \section{경력}
 \cventry{2021. 07.}{아몬딘}{서울특별시}{}{1개월 단기 프리랜서}
-{백엔드 / 특허 기능 개발 및 IT 관련 자문}
+{백엔드 / 특허 기능 개발 및 기술 관련 자문}
 
 \cventry{2024. 02.}{AbleSECU}{서울특별시}{}{8개월 단기 계약직}
 {윈도우 아티팩트 연구 및 기술지원 엔지니어링}
@@ -75,22 +76,29 @@
 \cvline{Embedded}{Arduino, Raspberry PI, Linux}
 \cvline{Dev tools}{Jetbrains IDE, VSCode, Visual Studio, Kate}
 
-\section{수상 내역}
-\cventry{}{2021 Hallym SW Week}{한림대학교}{2021 SW Coding Festival}{동상}
+\section{대회 활동 내역}
+\cventry{2021}{2021 Hallym SW Week}{한림대학교}{2021 SW Coding Festival}{동상}
 {교내 소프트웨어 행사 중 코딩 테스트 대회에 참여해 동상을 수상하였음.}
 
+\cventry{2024}{2024 White Hat Conference}{경찰대학}{}{}
+{Hallym 팀으로 출전해 CTF 845점을 기록하였음.}
+
 \section{오픈소스 활동 내역}
-\cventry{}{\href{https://github.com/HyunP-dev/flashlight}{\faGithub\  HyunP-dev/flashlight}}{}{}{}
+\newcommand{\githubrepo}[2]{%
+  \href{https://github.com/#1/#2}{\faGithub\ #1/#2}%
+}
+
+\cventry{}{\githubrepo{HyunP-dev}{flashlight}}{}{}{}
 {다크넷 OSINT 분석을 목적으로한 Python 라이브러리.}
 
-\cventry{}{\href{https://github.com/HyunP-dev/sanctions-list-transform}{\faGithub\  HyunP-dev/sanctions-list-transform}}{}{}{}
+\cventry{}{\githubrepo{HyunP-dev}{sanctions-list-transform}}{}{}{}
 {Maltego에서 SDN을 통해 지갑 주소의 출처를 알아낼 수 있도록 한 transform.}
 
-\cventry{}{\href{https://github.com/HyunP-dev/qforensics}{\faGithub\  HyunP-dev/qforensics}}{}{}{}
+\cventry{}{\githubrepo{HyunP-dev}{qforensics}}{}{}{}
 {PySide6와 The Sleuth Kit를 이용해 구현한 확장 가능한 포렌식 소프트웨어.}
 
-\cventry{}{\href{https://github.com/HyunP-dev/ocaml-forensics}{\faGithub\  HyunP-dev/ocaml-forensics}}{}{}{}
+\cventry{}{\githubrepo{HyunP-dev}{ocaml-forensics}}{}{}{}
 {OCaml의 HM-Type System을 디지털 포렌식 분석 과정에 접목시켜 보고자 작성한 OCaml 포렌식 라이브러리.}
 
-\cventry{}{}{}{}{}{------\\그 외 저장소들은 {\url{https://github.com/HyunP-dev}}에서 확인하실 수 있습니다.}
+\cventry{}{}{}{}{}{-----------\\각 저장소를 클릭하시면 해당 저장소를 열람하실 수 있습니다.\\또한 그 외 저장소들은 {\url{https://github.com/HyunP-dev}}에서 확인하실 수 있습니다.}
 \end{document}
