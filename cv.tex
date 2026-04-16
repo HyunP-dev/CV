@@ -1,9 +1,13 @@
+%!TEX program = xelatex
 \documentclass[11pt,a4paper]{moderncv}
+
 
 \moderncvtheme{classic}
 
 \usepackage[scale=0.8]{geometry}
 \recomputelengths
+
+\usepackage{fontawesome5}
 
 \renewcommand{\labelitemi}{\null\ $\bullet$}
 
@@ -13,7 +17,7 @@
 \usepackage{setspace}
 \setstretch{1.25}
 
-\name{\textbf{박\ \ 현}}{}
+\name{\textbf{\textcolor{black}{박\ \ 현}}}{}
 \title{}
 \address{서울시 동대문구 전농동}{사가정로 190}
 \mobile{+82 10 8465 6774}
@@ -26,7 +30,7 @@
 
 \section{학력}
 \cvline{2019년 졸업}{\textbf{동국대학교사범대학부속고등학교,} 서울특별시}
-\cventry{2020. $\sim$ }{한림대학교}{강원도 춘천시}{}{}
+\cventry{2020. 03. $\sim$ 2024. 02.}{한림대학교}{강원도 춘천시}{}{}
 {
 주전공: 정보과학대학 소프트웨어학부 빅데이터전공\\
 복수전공: 정보과학대학 소프트웨어학부 스마트IoT전공
@@ -34,16 +38,17 @@
 
 \section{경력}
 \cventry{2021. 07.}{아몬딘}{서울특별시}{}{1개월 단기 프리랜서}
-{
-백엔드 및 특허기능개발에 참여하고 그 외 IT 관련의 자문을 맡음.
-}
+{백엔드 / 특허 기능 개발 및 IT 관련 자문}
+
+\cventry{2024. 02.}{AbleSECU}{서울특별시}{}{8개월 단기 계약직}
+{윈도우 아티팩트 연구 및 기술지원 엔지니어링}
 
 \section{연구실 활동 이력}
-\cventry{2021. $\sim$ }{임베디드 연구실}{한림대학교}{}{학부연구생}
+\cventry{2021. 08. $\sim$ 2023. 12.}{임베디드 연구실}{한림대학교}{}{학부연구생}
 {사용자의 생체 데이터를 분석 가능한 형태로 기록하는 어플리케이션의 개발과 여러가지 신호처리 기법들을 활용해 정상적으로 기록되었는지 분석하는 작업을 주로 수행함.}
 
-\cventry{2023. $\sim$ }{디지털의료 미래연구소}{한림대학교}{}{학부연구생}
-{임상 실험을 보조하고 생체 데이터를 k-NN이나 Random Forest와 같은 머신러닝 기법들을 적용해 환자를 구분해내는 과제를 수행함.}
+\cventry{2023. 07. $\sim$ 2023. 12.}{디지털의료 미래연구소}{한림대학교}{}{학부연구생}
+{임상 실험을 보조하고 생체 데이터를 $k$-NN이나 Random Forest와 같은 머신러닝 기법들을 적용해 환자를 구분해내는 과제를 수행함.}
 
 \section{교내 활동 이력}
 \cventry{2023.}{2023-1학기 소프트웨어학부 전공 멘토링}{}{}{}
@@ -57,37 +62,35 @@
 \cvline{}{\ $\bullet$\ \ 인터넷 기사의 악성 댓글 양상에 관한 분석}
 \cvline{}{\ $\bullet$\ \ 상반된 두 단어를 포함하는 문자열에 대한 성향 결정 모델의 구현}
 \cvline{}{\ $\bullet$\ \ 환절기 예측을 통한 감기 예방}
-\cvline{}{\ $\bullet$\ \ Apache Tomcat와 R, LaTeX를 이용한 온라인 데이터 분석기의 구현}
+\cvline{}{\ $\bullet$\ \ Apache Tomcat와 R, \LaTeX 를 이용한 온라인 데이터 분석기의 구현}
 \cvline{}{\ $\bullet$\ \ VM과 해시를 이용한 인터넷 접속 흔적에 대한 실험}
 
 \section{기술 스택}
-\cvline{Back-end}{Apache Tomcat, MySQL, Flask, Express}
+\cvline{Back-end}{Apache Tomcat, MySQL, Flask, Express, FastAPI}
 \cvline{Statistics}{Visualization, Machine Learning}
-\cvline{Report}{LaTeX, Markdown, HTML5, draw.io}
-\cvline{Languages}{FORTRAN, Python, GNU S (R), MATLAB, 
-C/C++, Java, CSharp, JavaScript, Shell}
+\cvline{Report}{LaTeX, Markdown, Typst, HTML5}
+\cvline{Languages}{FORTRAN, Python, R, MATLAB, C/C++, Java, CSharp, JavaScript, Shell, OCaml}
 \cvline{Games devs}{Love2D, Unity}
-\cvline{GUI devs}{Windows Forms, GTK, Qt}
-\cvline{Embedded}{Arduino, Linux}
-\cvline{Dev tools}{Jetbrains IDE, VSCode, Kate}
+\cvline{GUI devs}{Windows Forms, WPF, Qt}
+\cvline{Embedded}{Arduino, Raspberry PI, Linux}
+\cvline{Dev tools}{Jetbrains IDE, VSCode, Visual Studio, Kate}
 
 \section{수상 내역}
 \cventry{}{2021 Hallym SW Week}{한림대학교}{2021 SW Coding Festival}{동상}
 {교내 소프트웨어 행사 중 코딩 테스트 대회에 참여해 동상을 수상하였음.}
 
-\section{깃허브 저장소}
-\cventry{}{internet-cleaner}{}{}{}
-{{\footnotesize \url{https://github.com/HyunP-dev/internet-cleaner}}\\
-스마일게이트에서 제공하는 한국어 혐오표현 데이터셋의 베이스라인 모델을 REST 서버로 내부적으로 서비스하게 해 작성하였음.}
-\cventry{}{Kana-Practice-GTKMM4}{}{}{}
-{{\footnotesize \url{https://github.com/HyunP-dev/Kana-Practice-GTKMM4}}\\
-GTK의 C++ Wrapper인 GTKMM4을 이용해 데스크탑 어플리케이션을 만들어보고자 연습 목적으로 만들게 되었음.}
-\cventry{}{G27-to-XBOX-Converter}{}{}{}
-{{\footnotesize \url{https://github.com/HyunP-dev/G27-to-XBOX-Converter}}\\
-G27를 사용하던 중 낮은 호환성에 불편함을 느끼게 되어 만들게 되었음.}
-\cventry{}{peerism-data-manager}{}{}{}
-{{\footnotesize \url{https://github.com/hallym-peerism/peerism-data-manager}}\\
-캡스톤디자인으로 진행하게 된 프로젝트로 센서 로깅을 블록체인 기술을 활용해 안전하게 저장할 수 있는 데이터베이스 프로그램을 개발하였음. GUI 환경의 프로그램으로 제공.}
-\ \\
+\section{오픈소스 활동 내역}
+\cventry{}{\href{https://github.com/HyunP-dev/flashlight}{\faGithub\  HyunP-dev/flashlight}}{}{}{}
+{다크넷 OSINT 분석을 목적으로한 Python 라이브러리.}
+
+\cventry{}{\href{https://github.com/HyunP-dev/sanctions-list-transform}{\faGithub\  HyunP-dev/sanctions-list-transform}}{}{}{}
+{Maltego에서 SDN을 통해 지갑 주소의 출처를 알아낼 수 있도록 한 transform.}
+
+\cventry{}{\href{https://github.com/HyunP-dev/qforensics}{\faGithub\  HyunP-dev/qforensics}}{}{}{}
+{PySide6와 The Sleuth Kit를 이용해 구현한 확장 가능한 포렌식 소프트웨어.}
+
+\cventry{}{\href{https://github.com/HyunP-dev/ocaml-forensics}{\faGithub\  HyunP-dev/ocaml-forensics}}{}{}{}
+{OCaml의 HM-Type System을 디지털 포렌식 분석 과정에 접목시켜 보고자 작성한 OCaml 포렌식 라이브러리.}
+
 \cventry{}{}{}{}{}{------\\그 외 저장소들은 {\url{https://github.com/HyunP-dev}}에서 확인하실 수 있습니다.}
 \end{document}
